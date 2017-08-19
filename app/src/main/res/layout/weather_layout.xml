@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/weather_et"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="34dp">
+
+            <TextView
+                android:id="@+id/wendu_et"
+                android:layout_width="78dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="20dp"
+                android:text="18度"
+                android:textColor="@android:color/black"
+                android:textSize="29sp" />
+
+            <TextView
+                android:id="@+id/miaoshu_et"
+                android:layout_width="78dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:text="多云"
+                android:textColor="@android:color/black"
+                android:textSize="26sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#dbdbdb" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="34dp">
+            <TextView
+                android:id="@+id/city_et"
+                android:layout_width="88dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="30dp"
+                android:text="绵阳"
+                android:layout_alignParentBottom="true"
+                android:textColor="@android:color/black"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/country_et"
+                android:layout_width="88dp"
+                android:layout_height="32dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="中国"
+                android:textColor="@android:color/black"
+                android:textSize="22sp" />
+        </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

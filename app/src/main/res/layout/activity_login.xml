@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/accent_material_dark" >
+
+        <ImageView
+
+            android:id="@+id/return_et"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/return_1" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:textSize="31dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="国家和地区"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="中国"
+                android:textColor="#45c01a"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#dbdbdb" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp" >
+            <EditText
+                android:id="@+id/username_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/abc_btn_default_mtrl_shape"
+                android:hint="用户名/手机号/邮箱"
+                android:paddingLeft="90dp"
+                android:singleLine="true"
+                android:textColorHint="#DDDDDD"
+                android:textSize="16sp"
+                android:textCursorDrawable="@null"/>
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/username_et"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="用户名"
+                android:textColor="#353535"
+                android:textSize="16sp"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp" >
+            <EditText
+                android:id="@+id/password_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/abc_btn_default_mtrl_shape"
+                android:hint="填写密码"
+                android:paddingLeft="90dp"
+                android:singleLine="true"
+                android:textColorHint="#DDDDDD"
+                android:textSize="16sp"
+                android:textCursorDrawable="@null" />
+            <TextView
+
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/password_et"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="密码"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/login_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/abc_btn_default_mtrl_shape"
+            android:enabled="true"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="登录"
+            android:textColor="@color/abc_search_url_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/quest_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:text="忘记密码？"
+            android:textColor="#576B95"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/logon_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:layout_margin="33dp"
+            android:background="@drawable/abc_btn_default_mtrl_shape"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="注册"
+            android:textColor="@color/abc_search_url_text"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>
